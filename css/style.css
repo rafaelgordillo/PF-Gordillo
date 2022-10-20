@@ -4,13 +4,15 @@
     box-sizing: border-box;
 }
 
+/********LAS PAGINAS RESPONSIVE SON  "CLIENTES" Y "CONTACTO" *****/
+/*///////////////////////////////////////////////////////////////*/
+
 /*   font-family: 'Montserrat', sans-serif; (font-family a utilizar) */
 
 /* HEADER DE TODOS LOS ARCHIVOS */
 header {
     display: flex;
     flex-direction: row;
-
     justify-content: space-between;
     align-items: center;
     background-color: rgb(181, 203, 228);
@@ -19,7 +21,6 @@ header {
 }
 
 .logo {
-
     padding-left: 50px;
 }
 
@@ -278,8 +279,6 @@ section p {
     color: crimson;
 }
 
-
-
 /* FIN DE MAIN EMPRESA */
 
 /* MAIN SERVICIOS */
@@ -305,7 +304,6 @@ section p {
 }
 
 .section-servicios li {
-
     padding: 30px;
 }
 
