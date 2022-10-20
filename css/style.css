@@ -13,19 +13,49 @@ header {
 
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(249, 210, 138);
-    /*background-color: rgb(252, 213, 165);*/
-    padding: 5px 5px 2px 5px;
+    background-color: rgb(181, 203, 228);
+    padding: 2px 5px 0px 5px;
     /*width: 100%;*/
 }
 
 .logo {
-   /* display: flex;*/
+
     padding-left: 50px;
 }
 
 .logo img {
     border-radius: 10px;
+    /***animacion del logo****/
+    -webkit-animation: scale-in-center 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-center 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes scale-in-center {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes scale-in-center {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .nav-bar {
@@ -58,7 +88,7 @@ nav {
 
 /*MEDIA QUERIES TABLET*/
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
     .logo img {
         height: 90px;
@@ -79,11 +109,12 @@ nav {
         padding-right: 40px;
     }
 }
-    /*MEDIA QUERIES MOBILE*/
 
-    @media (max-width: 576px){
+/*MEDIA QUERIES MOBILE*/
 
-.nav-bar {
+@media (max-width: 576px) {
+
+    .nav-bar {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -104,10 +135,10 @@ nav {
     }
 
     .logo {
-        /* display: flex;*/
-         padding-left: 35px;
-     }
-     
+
+        padding-left: 35px;
+    }
+
 
 }
 
@@ -302,8 +333,8 @@ section p {
     grid-template-columns: repeat(2, 300px);
     /*grid-template-rows: repeat(4, 100px);*/
     /*grid-template-areas: 
-    "logo-1 log-2"
-    "logo-3 logo-4"
+    "logo-1 log-2"                 
+    "logo-3 logo-4"              ////posiblemente se vuelva a modificar el grid///
     "logo-5 logo-6"
     "logo-7 logo-8"
     ;*/
@@ -362,7 +393,7 @@ section p {
 
 @media (max-width: 576px) {
 
-  
+
     .container-logo {
         display: grid;
         width: 100%;
@@ -376,7 +407,7 @@ section p {
     }
 
     .main-title {
-        
+
         height: 25px;
         background-color: rgb(240, 240, 240);
         font-family: 'Montserrat', sans-serif;
@@ -418,7 +449,7 @@ section p {
     width: 500px;
     margin-top: 8%;
     border-radius: 10px;
-    background-color: rgb(249, 210, 138);
+    background-color: rgb(181, 203, 228);
     height: 55%;
 
 }
@@ -487,7 +518,7 @@ section p {
         width: 370px;
         margin-top: 12%;
         border-radius: 10px;
-        background-color: rgb(249, 210, 138);
+        background-color: rgb(181, 203, 228);
         height: 55%;
     }
 
@@ -505,14 +536,12 @@ section p {
         width: 360px;
         margin-top: 18%;
         border-radius: 10px;
-        background-color: rgb(249, 210, 138);
+        background-color: rgb(181, 203, 228);
         height: 55%;
     }
 
 
 }
-
-
 
 /* FIN MAIN CONTACTO*/
 
@@ -521,7 +550,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgb(249, 210, 138);
+    background-color: rgb(181, 203, 228);
     padding: 5px;
     width: 100%;
 }
@@ -558,8 +587,9 @@ footer {
     height: 40px;
 
 }
+
 /*MEDIA QUERIES MOBILE*/
-@media (max-width:576px){
+@media (max-width:576px) {
 
     .name-address {
         font-family: 'Montserrat', sans-serif;
@@ -567,42 +597,33 @@ footer {
         padding-left: 40px;
         font-size: 13px;
     }
-       
-
-
-.container-redes {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 5px;
-    width: 100%;
-    row-gap: 40px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-}
-
-.container-redes h5 {
-    padding-right: 20px;
-}
-
-.container-redes ul a {
-    margin-right: 15px;
-
-}
-
-.container-redes img {
-
-    width: 20;
-    height: 20px;
-
-}
 
 
 
+    .container-redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 5px;
+        width: 100%;
+        row-gap: 40px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+    }
 
+    .container-redes h5 {
+        padding-right: 20px;
+    }
 
+    .container-redes ul a {
+        margin-right: 15px;
 
+    }
 
+    .container-redes img {
+        width: 20;
+        height: 20px;
+    }
 
 }
 
