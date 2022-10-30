@@ -34,7 +34,8 @@
 section p {
     font-family: $font-paragraph;
     font-size: 25px;
-}.container-articles {
+}
+.container-articles {
     display: grid;
     grid-template-columns: repeat(2, 600px);
     grid-template-rows: repeat(2, 600px);
