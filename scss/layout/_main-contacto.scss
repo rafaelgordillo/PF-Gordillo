@@ -1,0 +1,73 @@
+.main-container {
+
+    display: flex;
+    justify-content: center;
+    background-image: url(../assets/img/imagen-oficina.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.container-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    margin-top: 8%;
+    border-radius: 10px;
+    background-color: $background-contact;
+    height: 55%;
+}
+
+.title-contact {
+    row-gap: 25px;
+    font-family: $font-paragraph;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.form-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    row-gap: 25px;
+    font-family: $font-paragraph;
+    font-size: 25px;
+}
+
+.box-contact {
+    display: flex;
+    margin: 8px 0px;
+     label {
+        flex-basis: 200px;
+        margin-right: 10px;
+    }
+    
+     input {
+        display: flex;
+        flex: 1;
+        padding: 5px;
+    }   
+}
+
+.bottom input {
+    padding: 15px 60px 15px 60px;
+    background-color: rgba(51, 82, 219, 0.801);
+    margin-bottom: 20px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+     :hover {
+        background-color: rgb(239, 109, 104);
+    }
+}
+
+.msj {
+    display: flex;
+    /*flex: 2;*/
+}
+
+

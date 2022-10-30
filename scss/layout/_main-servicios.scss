@@ -1,0 +1,23 @@
+.container-servicios {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
+     h3 {
+        font-family: $font-paragraph;
+        font-size: 30px;
+    }
+}
+.section-servicios {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: $font-paragraph;
+    font-size: 25px;
+     li {
+        padding: 30px;
+    }
+    
+}
+
+
+

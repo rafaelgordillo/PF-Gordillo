@@ -1,0 +1,74 @@
+/*media queries header*/
+@media (max-width:768px) {
+
+    .logo img {
+        height: 90px;
+        width: 90px;
+        border-radius: 10px;
+    }
+
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        width: 100%;
+        justify-content: flex-end;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        gap: 20px;
+        padding-right: 40px;
+    }
+}
+/*media queries footer*/
+
+/*media queries index*/
+
+
+
+
+
+/*media queries clientes*/
+@media(max-width: 768px) {
+
+    .container-logo {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 250px);
+        background-image: url(../assets/img/imagen-pasillo-fondo.jpg);
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-title {
+        height: 40px;
+        background-color: rgb(240, 240, 240);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    .logo-client img {
+
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+    }
+}
+
+/*media queries contacto*/
+@media (max-width: 768px) {
+
+    .container-contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 370px;
+        margin-top: 12%;
+        border-radius: 10px;
+        background-color: rgb(181, 203, 228);
+        height: 55%;
+    }
+
+}

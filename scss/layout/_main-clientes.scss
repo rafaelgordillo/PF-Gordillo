@@ -1,0 +1,29 @@
+.main-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(240, 240, 240);
+    font-family: $font-paragraph;
+    font-size: 30px;
+}
+.container-logo {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 300px);
+    background-image: url(../assets/img/imagen-pasillo-fondo.jpg);
+    background-size: cover;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+.logo-client img {
+
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+.lista-clientes {
+    font-family: $font-paragraph;
+    font-size: 25px;
+}
