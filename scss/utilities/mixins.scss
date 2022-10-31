@@ -7,3 +7,16 @@
   border-radius: 20px;
     
 }
+
+/*mixin mobile*/
+@mixin prop-fbox-mobile {
+  background-color: #f0f0f0;
+display: flex;
+flex-direction: column;
+
+align-items: center;
+border-radius: 20px;
+width: 100%;
+height: 300px;
+  
+}

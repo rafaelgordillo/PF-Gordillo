@@ -24,6 +24,43 @@
 
 /*media queries empresa*/
 @media (max-width:768px){
+
+    .container-empresa {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        padding-top: 10px;
+        padding-left: 5px;
+        padding-bottom: 10px;
+        background-color: rgb(240, 240, 240);
+        border-radius: 20px;
+         div img {
+        width: 250px;
+        height: 250px;
+        border-radius: 20px;
+        }
+         div h2 {
+            font-family: $font-paragraph;
+            font-size: 15px;
+            padding-left: 45px;
+        }
+    }
+    .texto-empresa {
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+         h3 {
+            font-family:  $font-paragraph;
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
 .container-articles {
     display: grid;
     grid-template-columns: 1fr;
@@ -56,8 +93,8 @@
     @include prop-fbox;
 }
 .img-art {
-    width: 80%;
-    height: 300px;
+    width: 75%;
+    height: 55%;
     border-radius: 5px;
 }
 
@@ -65,12 +102,26 @@
     padding: 10px;
      h4 {
         font-family: $font-paragraph;
-        font-size: 25px;
+        font-size: 20px;
         color: crimson;
     }
-    
+    p{
+        font-size: 20px;
+    }   
 }
-
+}
+/*media queries servicios*/
+@media(max-width: 768px){
+.container-servicios{
+    h3{
+        font-size: 20px;
+    }
+}
+ .section-servicios{
+    li{
+        font-size: 20px;
+    }
+ }
 }
 
 
@@ -107,6 +158,10 @@
 /*media queries contacto*/
 @media (max-width: 768px) {
 
+    .title-contact{
+        font-size: 20px;
+    }
+
     .container-contact {
         display: flex;
         flex-direction: column;
@@ -116,6 +171,10 @@
         border-radius: 10px;
         background-color: rgb(181, 203, 228);
         height: 55%;
+        
+    }
+    .form-cont{
+        font-size: 20px;
     }
 
 }
