@@ -1,4 +1,5 @@
-.main-container {
+/***CONTACTO***/
+.main-container {/*contenedor general para la imagen de fondo*/
 
     display: flex;
     justify-content: center;
@@ -9,7 +10,7 @@
 
 }
 
-.container-contact {
+.container-contact {/*contenedor de formulario*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,7 +28,7 @@
     padding: 20px;
 }
 
-.form-cont {
+.form-cont {/*contenedor que agrupa a los casilleros de datos*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,7 +38,7 @@
     font-size: 25px;
 }
 
-.box-contact {
+.box-contact {/*cada uno de los casilleros para ingresar datos*/
     display: flex;
     margin: 8px 0px;
      label {
@@ -45,14 +46,14 @@
         margin-right: 10px;
     }
     
-     input {
+     input {/*ingreso de datos*/
         display: flex;
         flex: 1;
         padding: 5px;
     }   
 }
 
-.bottom input {
+.bottom input {/*boton de enviar*/
     padding: 15px 60px 15px 60px;
     background-color: rgba(51, 82, 219, 0.801);
     margin-bottom: 20px;

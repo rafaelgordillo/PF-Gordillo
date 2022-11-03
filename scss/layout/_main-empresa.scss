@@ -1,7 +1,7 @@
+/***EMPRESA***/
 .container-empresa {
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap;*/
     width: 100%;
     padding-top: 10px;
     padding-left: 5px;
@@ -20,7 +20,7 @@
         padding-left: 45px;
     }
 }
-.texto-empresa {
+.texto-empresa { /*texto que describe a la empresa*/
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -35,7 +35,7 @@ section p {
     font-family: $font-paragraph;
     font-size: 25px;
 }
-.container-articles {
+.container-articles {/*los valores y propositos de la empresa*/
     display: grid;
     grid-template-columns: repeat(2, 600px);
     grid-template-rows: repeat(2, 600px);
@@ -48,32 +48,32 @@ section p {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.box-1 {
+.box-1 {/*mision*/
     grid-area: box-1;
     @include prop-fbox;
 }
 
-.box-2 {
+.box-2 {/*vision*/
     grid-area: box-2;
     @include prop-fbox;
 }
 
-.box-3 {
+.box-3 {/*valores*/
     grid-area: box-3;
     @include prop-fbox;
 }
 
-.box-4 {
+.box-4 {/*objetivo*/
     grid-area: box-4;
     @include prop-fbox;
 }
-.img-art {
+.img-art {/*imagen de cada uno de los box*/
     width: 80%;
     height: 300px;
     border-radius: 5px;
 }
 
-.text-box {
+.text-box {/*texto de cada uno de los box*/
     padding: 10px;
      h4 {
         font-family: $font-paragraph;
