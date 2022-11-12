@@ -72,8 +72,7 @@ footer {
   justify-content: space-between;
   background-color: #b5cbe4;
   padding: 5px;
-  width: 100%;
-  margin-bottom: 0; }
+  width: 100%; }
 
 .name-address {
   font-family: "Montserrat", sans-serif;
@@ -107,6 +106,9 @@ footer {
     background-repeat: no-repeat;
    
 }*/
+main {
+  min-height: 100%; }
+
 .background-img {
   background-image: url(../assets/img/tres-personas.png);
   background-size: cover;
