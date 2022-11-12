@@ -10,13 +10,16 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #b5cbe4;
+  /*background-color: $background-header;*/
   padding: 2px 5px 0px 5px; }
 
 .logo {
   padding-left: 50px; }
   .logo img {
-    border-radius: 10px;
+    border-radius: 5px;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
     /***animacion del logo****/
     -webkit-animation: scale-in-center 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     animation: scale-in-center 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
@@ -51,13 +54,13 @@ nav {
   list-style: none;
   width: 100%;
   justify-content: flex-end;
-  font-size: 25px;
+  font-size: 18px;
   font-family: 'Montserrat', sans-serif;
   gap: 50px;
-  padding-right: 40px; }
+  padding-right: 60px; }
   .nav-bar li a {
     text-decoration: none;
-    color: black; }
+    color: white; }
   .nav-bar li a:hover {
     color: #fc1111;
     cursor: pointer; }
@@ -69,7 +72,8 @@ footer {
   justify-content: space-between;
   background-color: #b5cbe4;
   padding: 5px;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 0; }
 
 .name-address {
   font-family: "Montserrat", sans-serif;
@@ -93,13 +97,22 @@ footer {
     width: 40;
     height: 40px; }
 
-.image-index {
-  width: 100%;
-  height: 100vh;
-  background-image: url("../assets/img/tres-personas.png");
-  background-position: center;
+/*.image-index {
+    
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/img/tres-personas.png");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+   
+}*/
+.background-img {
+  background-image: url(../assets/img/tres-personas.png);
   background-size: cover;
-  background-repeat: no-repeat; }
+  position: absolute;
+  width: 100%;
+  height: 100%; }
 
 /***EMPRESA***/
 .container-empresa {

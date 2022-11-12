@@ -4,7 +4,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: $background-header;
+    /*background-color: $background-header;*/
     padding: 2px 5px 0px 5px;
     
 }
@@ -13,7 +13,10 @@ header {
     padding-left: 50px;
 
     img {
-        border-radius: 10px;
+        border-radius: 5px;
+        width: 80px;
+        height: 80px;
+        margin: 10px;
         /***animacion del logo****/
         -webkit-animation: scale-in-center 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation: scale-in-center 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -56,13 +59,13 @@ nav {
     list-style: none;
     width: 100%;
     justify-content: flex-end;
-    font-size: 25px;
+    font-size: 18px;
     font-family:'Montserrat', sans-serif;
     gap: 50px;
-    padding-right: 40px;
+    padding-right: 60px;
     li a {
         text-decoration: none;
-        color: black;
+        color: white;
     }
     li a:hover {
         color: rgb(252, 17, 17);
