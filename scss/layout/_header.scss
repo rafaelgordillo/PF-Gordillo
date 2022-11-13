@@ -5,7 +5,7 @@ header {
     justify-content: space-between;
     align-items: center;
     /*background-color: $background-header;*/
-    padding: 2px 5px 0px 5px;
+    padding: 2px 5px 0px 2px;
     
 }
 
@@ -16,7 +16,7 @@ header {
         border-radius: 5px;
         width: 80px;
         height: 80px;
-        margin: 10px;
+        margin: 2px;
         /***animacion del logo****/
         -webkit-animation: scale-in-center 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation: scale-in-center 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -71,4 +71,8 @@ nav {
         color: rgb(252, 17, 17);
         cursor: pointer;
     }
+}
+.fondo{
+    background-color: rgb(59, 56, 56);
+    
 }

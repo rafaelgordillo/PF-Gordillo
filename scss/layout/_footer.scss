@@ -3,18 +3,19 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: $background-footer;
+    background-color:  rgb(59, 56, 56);
     padding: 5px;
     width: 100%;
     
-    
 }
-.name-address {
+.name-address { /*nombre y direccion de la empresa*/
     font-family: $font-paragraph;
+    color: white;
     width: 80%;
     padding-left: 40px;
+   
 }
-.container-redes {
+.container-redes { /*contenedor de redes sociales*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -25,6 +26,7 @@ footer {
     font-size: 25px;
      h5 {
         padding-right: 30px;
+        color: white;
     }
      ul a {
         margin-right: 20px;
