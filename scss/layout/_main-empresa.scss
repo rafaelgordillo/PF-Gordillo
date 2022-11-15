@@ -61,6 +61,19 @@ p{
     };
     
 }
+.text-director{/*texto descriptivo del director*/
+    width: 70%;
+   
+
+h3{
+    font-family: $font-paragraph;
+    padding-bottom: 20px;
+}
+p{
+    font-family: $font-paragraph;
+    line-height: 1.5;
+}
+}
 
 .certifications{/*contenedor de imagenes de certificados*/
     grid-area: certificados;

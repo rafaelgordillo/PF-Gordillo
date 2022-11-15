@@ -181,6 +181,16 @@ footer {
     width: 250px;
     height: 250px; }
 
+.text-director {
+  /*texto descriptivo del director*/
+  width: 70%; }
+  .text-director h3 {
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 20px; }
+  .text-director p {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5; }
+
 .certifications {
   /*contenedor de imagenes de certificados*/
   grid-area: certificados;
@@ -397,7 +407,7 @@ footer {
   display: flex;
   /*flex: 2;*/ }
 
-/*media queries header*/
+/****media queries header****/
 @media (max-width: 768px) {
   .logo img {
     height: 90px;
@@ -416,9 +426,175 @@ footer {
     padding-right: 40px; } }
 
 /*media queries footer*/
-/*media queries empresa*/
-/****completar*****/
-/*media queries servicios*/
+@media (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #3b3838;
+    padding: 5px;
+    width: 100%; }
+  .name-address {
+    /*nombre y direccion de la empresa*/
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    color: white;
+    width: 80%;
+    padding-top: 10px;
+    padding-left: 20px; }
+  .container-redes {
+    /*contenedor de redes sociales*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px;
+    width: 100%;
+    row-gap: 60px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px; }
+    .container-redes h5 {
+      padding-right: 30px;
+      color: white; }
+    .container-redes ul a {
+      margin-right: 20px; }
+    .container-redes img {
+      width: 35;
+      height: 35px; } }
+
+/****media queries empresa****/
+@media (max-width: 768px) {
+  .container-empresa {
+    /*contenedor general de toda la pagina*/
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr, 50%, 1fr, 1fr, 1fr, 1fr;
+    width: 100%;
+    grid-template-areas: "empresa"  "director" "certificados" "box-1" "box-2" "box-3" "box-4"; }
+  .empresa {
+    /*contenedor de la descripcion de la empresa*/
+    grid-area: empresa;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px; }
+    .empresa img {
+      /*logo de la empresa*/
+      border-radius: 6px;
+      width: 150px;
+      height: 150px; }
+  .text-empresa {
+    /*texto descriptivo de la empresa*/
+    width: 80%; }
+    .text-empresa h3 {
+      font-family: "Montserrat", sans-serif;
+      padding-bottom: 20px; }
+    .text-empresa p {
+      font-family: "Montserrat", sans-serif;
+      line-height: 1.5; }
+  .director {
+    /*contenedor descriptivo del director de la empresa*/
+    grid-area: director;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    padding-left: 15px; }
+    .director img {
+      /*imagen director de empresa*/
+      border-radius: 6px;
+      width: 180px;
+      height: 180px; }
+  .text-director {
+    /*texto descriptivo del director*/
+    width: 50%; }
+    .text-director h3 {
+      font-family: "Montserrat", sans-serif;
+      padding-bottom: 20px; }
+    .text-director p {
+      font-family: "Montserrat", sans-serif;
+      line-height: 1.5; }
+  .img-cert {
+    /*contenedor de imagenes de certificados*/
+    grid-area: certificados;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px; }
+    .img-cert img {
+      /*imagenes de certificados*/
+      margin: 20px;
+      border-radius: 6px;
+      width: 250px;
+      height: 200px;
+      border-style: inset; }
+  .text-box {
+    /*texto de los 4 boxes de fundamentos de la empresa*/
+    width: 70%;
+    height: 80%;
+    padding: 20px;
+    padding-bottom: 60px;
+    border-radius: 6px;
+    border-style: outset;
+    background-color: whitesmoke; }
+    .text-box h3 {
+      font-family: "Montserrat", sans-serif;
+      padding-bottom: 10px;
+      color: crimson; }
+    .text-box p {
+      font-family: "Montserrat", sans-serif;
+      line-height: 1.5; }
+  .box-1 {
+    /*"nuestra mision"*/
+    grid-area: box-1;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 25px; }
+  .box-2 {
+    /*"nuestra vision"*/
+    grid-area: box-2;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 25px; }
+  .box-3 {
+    /*"nuestros valores"*/
+    grid-area: box-3;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 25px; }
+  .box-4 {
+    /*"nuestro objetivo"*/
+    grid-area: box-4;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 25px; } }
+
+/****media queries servicios****/
 @media (max-width: 768px) {
   .container-services {
     display: grid;
@@ -457,7 +633,7 @@ footer {
       margin-left: 5px;
       margin-bottom: 5px; } }
 
-/*media queries clientes*/
+/****media queries clientes****/
 @media (max-width: 768px) {
   .container-logo {
     display: grid;
@@ -482,7 +658,7 @@ footer {
     height: 200px;
     border-radius: 10px; } }
 
-/*media queries contacto*/
+/****media queries contacto****/
 @media (max-width: 768px) {
   .title-contact {
     font-size: 20px; }
@@ -518,22 +694,24 @@ footer {
   .logo {
     padding-left: 35px; } }
 
-/*media queries footer*/
+/****media queries footer****/
 @media (max-width: 576px) {
   .name-address {
     font-family: 'Montserrat', sans-serif;
     width: 80%;
-    padding-left: 40px;
-    font-size: 13px; }
+    height: 100%;
+    padding-top: 5px;
+    padding-left: 15px;
+    font-size: 10px; }
   .container-redes {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 5px;
     width: 100%;
     row-gap: 40px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px; }
+    font-size: 10px; }
   .container-redes h5 {
     padding-right: 20px; }
   .container-redes ul a {
@@ -544,9 +722,144 @@ footer {
 
 /***media queries empresa***/
 @media (max-width: 576px) {
-  /****completar****/ }
+  .container-empresa {
+    /*contenedor general de toda la pagina*/
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr, 50%, 1fr, 1fr, 1fr, 1fr;
+    width: 100%;
+    grid-template-areas: "empresa"  "director" "certificados" "box-1" "box-2" "box-3" "box-4"; }
+  .empresa {
+    /*contenedor de la descripcion de la empresa*/
+    grid-area: empresa;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px; }
+    .empresa img {
+      /*logo de la empresa*/
+      border-radius: 6px;
+      width: 150px;
+      height: 150px; }
+  .text-empresa {
+    /*texto descriptivo de la empresa*/
+    width: 80%; }
+    .text-empresa h3 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 15px;
+      padding-bottom: 20px; }
+    .text-empresa p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 13px;
+      line-height: 1.5; }
+  .director {
+    /*contenedor descriptivo del director de la empresa*/
+    grid-area: director;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    padding-left: 15px; }
+    .director img {
+      /*imagen director de empresa*/
+      border-radius: 6px;
+      width: 180px;
+      height: 180px; }
+  .text-director {
+    /*texto descriptivo del director*/
+    width: 40%; }
+    .text-director h3 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 15px;
+      padding-bottom: 20px; }
+    .text-director p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 13px;
+      line-height: 1.5; }
+  .img-cert {
+    /*contenedor de imagenes de certificados*/
+    grid-area: certificados;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px; }
+    .img-cert img {
+      /*imagenes de certificados*/
+      margin: 20px;
+      border-radius: 6px;
+      width: 250px;
+      height: 200px;
+      border-style: inset; }
+  .text-box {
+    /*texto de los 4 boxes de fundamentos de la empresa*/
+    width: 70%;
+    height: 80%;
+    padding: 20px;
+    padding-bottom: 60px;
+    border-radius: 6px;
+    border-style: outset;
+    background-color: whitesmoke; }
+    .text-box h3 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 15px;
+      padding-bottom: 10px;
+      color: crimson; }
+    .text-box p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 13px;
+      line-height: 1.5; }
+  .box-1 {
+    /*"nuestra mision"*/
+    grid-area: box-1;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 25px; }
+  .box-2 {
+    /*"nuestra vision"*/
+    grid-area: box-2;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 25px; }
+  .box-3 {
+    /*"nuestros valores"*/
+    grid-area: box-3;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 25px; }
+  .box-4 {
+    /*"nuestro objetivo"*/
+    grid-area: box-4;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 25px; } }
 
-/***media queries servicios***/
+/****media queries servicios****/
 @media (max-width: 576px) {
   .container-services {
     /*contenedor de servicios*/
@@ -600,6 +913,8 @@ footer {
     height: 100%;
     font-size: 13px;
     padding-left: 10px; }
+    .main-title p {
+      font-size: 13px; }
   .container-logo {
     display: grid;
     width: 100%;
