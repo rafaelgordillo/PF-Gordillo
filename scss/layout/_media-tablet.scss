@@ -20,273 +20,168 @@
         padding-right: 40px;
     }
 }
-/*media queries footer*/
 
-@media (max-width:768px){
+/*****media queries footer*****/
+
+@media (max-width:768px) {
 
     footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background-color:  rgb(59, 56, 56);
+        background-color: rgb(59, 56, 56);
         padding: 5px;
         width: 100%;
-        
+
     }
-    .name-address { /*nombre y direccion de la empresa*/
+
+    .name-address {
+        /*nombre y direccion de la empresa*/
         font-family: $font-paragraph;
         font-size: 12px;
         color: white;
         width: 80%;
-        padding-top: 10px;
         padding-left: 20px;
-       
+
     }
-    .container-redes { /*contenedor de redes sociales*/
+
+    .container-redes {
+        /*contenedor de redes sociales*/
         display: flex;
         flex-direction: row;
-        justify-content:flex-end;
-        padding: 10px;
+        justify-content: flex-end;
         width: 100%;
         row-gap: 60px;
-        font-family: $font-paragraph;
         font-size: 18px;
-         h5 {
+
+        h5 {
+            font-family: $font-paragraph;
+            font-size: 15px;
             padding-right: 30px;
             color: white;
         }
-         ul a {
-            margin-right: 20px;
-        }
-         img {
-    
-            width: 35;
-            height: 35px;
-         }
     }
+
+    .container-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+        width: 30%;
+        padding-right: 35px;
+
+        img {
+            padding: 5px;
+            width: 35px;
+            height: 35px;
+        }
+
+    }
+
+
+
+
+
 }
 
 
 /****media queries empresa****/
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    .container-empresa{/*contenedor general de toda la pagina*/
+    .container-empresa {
+        /*contenedor general de toda la pagina*/
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr, 1fr, 50%, 1fr, 1fr, 1fr, 1fr;
         width: 100%;
         grid-template-areas:
-        "empresa" 
-        "director"
-        "certificados"
-        "box-1"
-        "box-2"
-        "box-3"
-        "box-4"
+            "empresa"
+            "director"
+            "certificados"
+            "box-1"
+            "box-2"
+            "box-3"
+            "box-4"
         ;
-        
+
     }
-    
-    .empresa{ /*contenedor de la descripcion de la empresa*/
+
+    .empresa {
+        /*contenedor de la descripcion de la empresa*/
         grid-area: empresa;
         display: flex;
         flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items:center;
-        gap: 20px;
-        padding: 20px;
-        
-        img{/*logo de la empresa*/
-            border-radius: 6px;
-            width: 150px;
-            height: 150px;  
-        }
-    }
-    .text-empresa{/*texto descriptivo de la empresa*/
-        width: 80%;
-       
-    
-    h3{
-        font-family: $font-paragraph;
-        padding-bottom: 20px;
-    }
-    p{
-        font-family: $font-paragraph;
-        line-height: 1.5;
-    }
-    }
-    
-    
-    .director{/*contenedor descriptivo del director de la empresa*/
-        grid-area: director;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        padding: 20px;
-        padding-left: 15px;
-        
-        img{/*imagen director de empresa*/
-            border-radius: 6px;
-            width: 180px;
-            height: 180px;
-        };    
     }
 
-    .text-director{/*texto descriptivo del director*/
+    .text-empresa {
+        /*texto descriptivo de la empresa*/
+        width: 80%;
+    }
+
+
+    .director {
+        /*contenedor descriptivo del director de la empresa*/
+        padding-left: 15px;
+    }
+
+    .text-director {
+        /*texto descriptivo del director*/
         width: 50%;
+
+
        
-    
-    h3{
-        font-family: $font-paragraph;
-        padding-bottom: 20px;
     }
-    p{
-        font-family: $font-paragraph;
-        line-height: 1.5;
-    }
-    }
-    
-    .img-cert{/*contenedor de imagenes de certificados*/
+
+    .img-cert {
+        /*contenedor de imagenes de certificados*/
         grid-area: certificados;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
         height: 100%;
-        justify-content:center;
+        justify-content: center;
         gap: 20px;
         padding: 20px;
-        
-        img{/*imagenes de certificados*/
+
+        img {
+            /*imagenes de certificados*/
             margin: 20px;
             border-radius: 6px;
             width: 250px;
             height: 200px;
             border-style: inset;
-        };
-    }
-    
-    .text-box{/*texto de los 4 boxes de fundamentos de la empresa*/
-        width: 70%;
-        height: 80%;
-        padding: 20px;
-        padding-bottom: 60px;
-        border-radius: 6px;
-        border-style: outset;
-        background-color: whitesmoke;
-        
-        h3{
-            font-family: $font-paragraph;
-            padding-bottom: 10px;
-            color: crimson;
         }
-        p{
-            font-family: $font-paragraph;
-            line-height: 1.5;
-        }
-    
-    }
-    
-    .box-1{/*"nuestra mision"*/
-        grid-area: box-1;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        padding: 25px;
-        
-      
-       
-        
-    }
-    
-    .box-2{/*"nuestra vision"*/
-        grid-area: box-2;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        padding: 25px;
-       
-        
-    }
-    
-    .box-3{/*"nuestros valores"*/
-        grid-area: box-3;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        padding: 25px;
-       
-       
-    }
-    
-    .box-4{/*"nuestro objetivo"*/
-        grid-area: box-4;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        padding: 25px;  
-    }
+    }   
 }
 
 /****media queries servicios****/
-@media(max-width: 768px){
+@media(max-width: 768px) {
     .container-services {
         display: grid;
         grid-template-columns: repeat(1, 450px);
-        width: 100%;
-        height: 100%;
-        justify-content: space-evenly;  
-        gap: 50px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+
     }
+
     .title-services {
-        font-family: $font-paragraph;
-        text-align: center;
+        /*titulo servicios*/
         font-size: 20px;
-        margin-top: 8px;
-        margin-bottom: 8px;
     }
-    .box-service{
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-        background-color: rgb(243, 241, 241);
-        box-shadow: 0.1px 2px 5px 5px rgba(6, 6, 6, 0.2);
-        border-radius: 6px;
-    
-        div img{
-           width: 100%;
-           height: 250px;      
+
+    .box-service {
+        /*box de cada uno de los servicos*/
+
+        div img {
+            width: 100%;
+            height: 250px;
         }
-        div h3{
-            font-family: $font-paragraph;
-            text-align:center;
+
+        div h3 {
             font-size: 20px;
-            margin-bottom: 5px;
         }
-        div p{
-            font-family: $font-paragraph;
-            text-align:left;
+
+        div p {
             font-size: 15px;
-            margin-left: 5px;
-            margin-bottom: 5px;
         }
     }
 }
@@ -294,56 +189,49 @@
 /****media queries clientes****/
 @media(max-width: 768px) {
 
-    .container-logo {
-        display: grid;
-        width: 100%;
-        grid-template-columns: repeat(2, 250px);
-        background-image: url(../assets/img/imagen-pasillo-fondo.jpg);
-        background-size: cover;
-        justify-content: center;
-        align-items: center;
-    }
-
     .main-title {
-        height: 40px;
-        background-color: rgb(240, 240, 240);
-        font-family: 'Montserrat', sans-serif;
-        height: 100%;
+
         font-size: 20px;
-        padding-left: 10px;
         padding: 5px;
-        p{
+
+        p {
             font-size: 15px;
         }
     }
 
+    .container-logo {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 250px);
+        justify-content: center;
+        align-items: center;
+    }
+
     .logo-client img {
 
-        width: 200px;
-        height: 200px;
-        border-radius: 10px;
+        width: 90%;
+        height: 90%;
     }
 }
 
 /****media queries contacto****/
 @media (max-width: 768px) {
 
-    .title-contact{
+    .title-contact {
         font-size: 20px;
     }
 
     .container-contact {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+
         width: 370px;
         margin-top: 12%;
         border-radius: 10px;
-        background-color: rgb(181, 203, 228);
+        background-color: $background-contact;
         height: 55%;
-        
+
     }
-    .form-cont{
+
+    .form-cont {
         font-size: 20px;
     }
 

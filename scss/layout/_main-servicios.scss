@@ -5,12 +5,14 @@
     grid-template-columns: repeat(3, 500px);
     width: 100%;
     height: 100%;
-    justify-content: space-evenly;  
+    justify-content: space-evenly;
     gap: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 .title-services {
+    /*titulo servicios*/
     font-family: $font-paragraph;
     text-align: center;
     font-size: 30px;
@@ -18,7 +20,8 @@
     margin-bottom: 8px;
 }
 
-.box-service{
+.box-service {
+    /*box de cada uno de los servicos*/
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -26,27 +29,25 @@
     box-shadow: 0.1px 2px 5px 5px rgba(6, 6, 6, 0.2);
     border-radius: 6px;
 
-    div img{
-       width: 100%;
-       height: 300px;      
+    div img {
+        width: 100%;
+        height: 300px;
     }
-    div h3{
+
+    div h3 {
         font-family: $font-paragraph;
-        text-align:center;
+        text-align: center;
         font-size: 25px;
         margin-bottom: 5px;
     }
-    div p{
+
+    div p {
         font-family: $font-paragraph;
-        text-align:left;
+        text-align: left;
         font-size: 20px;
         margin-left: 5px;
         margin-bottom: 5px;
     }
-    
-    
+
+
 }
-    
-
-
-

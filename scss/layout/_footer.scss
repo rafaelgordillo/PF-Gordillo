@@ -3,39 +3,44 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color:  rgb(59, 56, 56);
+    background-color: rgb(59, 56, 56);
     padding: 5px;
     width: 100%;
-    
+
 }
-.name-address { /*nombre y direccion de la empresa*/
+
+.name-address { /*nombre y telefono de la empresa*/
     font-family: $font-paragraph;
     color: white;
-    width: 80%;
-    padding-left: 40px;
-   
+    width: 60%;
+    padding-left: 50px;
 }
-.container-redes { /*contenedor de redes sociales*/
+
+.container-redes {/*contenedor de redes sociales*/
+    display: flex;
+    flex-direction: row;
+   justify-content: flex-end;
+    width: 60%;
+
+    h5 {   
+        font-family: $font-paragraph;
+        font-size: 20px;
+        padding-right: 40px;
+        color: white;
+    }
+}
+
+.container-links {/*container de iconos*/
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 10px;
-    width: 100%;
-    row-gap: 60px;
-    font-family: $font-paragraph;
-    font-size: 25px;
-     h5 {
-        padding-right: 30px;
-        color: white;
-    }
-     ul a {
-        margin-right: 20px;
-    }
-     img {
-
-        width: 40;
+    list-style: none;
+    width: 30%;
+    padding-right: 35px;
+    img {
+        padding: 5px;
+        width: 40px;
         height: 40px;
-     }
-
+    }
 
 }
