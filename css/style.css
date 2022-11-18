@@ -474,6 +474,25 @@ footer {
   .bottom :hover {
     background-color: #ef6d68; }
 
+/*****media queries servicios****/
+@media (max-width: 992px) {
+  .container-services {
+    /*contenedor de servicios*/
+    display: grid;
+    grid-template-columns: repeat(2, 450px); }
+  .title-services {
+    /*titulo servicios*/
+    font-size: 20px; }
+  .box-service {
+    /*box de cada uno de los servicos*/ }
+    .box-service img {
+      width: 100%;
+      height: 250px; }
+    .box-service h3 {
+      font-size: 18px; }
+    .box-service p {
+      font-size: 16px; } }
+
 /****media queries header****/
 @media (max-width: 768px) {
   .logo img {
@@ -716,7 +735,7 @@ footer {
       font-size: 13px; }
   .director {
     /*contenedor descriptivo del director de la empresa*/
-    padding-left: 15px; }
+    flex-direction: column; }
     .director img {
       /*imagen director de la emrpesa*/
       border-radius: 6px;
@@ -724,7 +743,7 @@ footer {
       height: 150px; }
   .text-director {
     /*texto descriptivo del director*/
-    width: 40%; }
+    width: 80%; }
     .text-director h3 {
       font-size: 15px; }
     .text-director p {
