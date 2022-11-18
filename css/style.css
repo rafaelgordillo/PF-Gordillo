@@ -108,11 +108,18 @@ footer {
     width: 40px;
     height: 40px; }
 
+.background-img {
+  background-image: url(../assets/img/tres-personas.png);
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
 .main-index {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  min-height: 85%; }
+  min-height: 88%; }
   .main-index h1 {
     grid-column: 2 / 5;
     grid-row: 6 / 8;
@@ -129,13 +136,6 @@ footer {
     font-size: 50px;
     margin-left: 15px;
     font-family: "Montserrat", sans-serif; }
-
-.background-img {
-  background-image: url(../assets/img/tres-personas.png);
-  background-size: cover;
-  position: absolute;
-  width: 100%;
-  height: 100%; }
 
 /*****EMPRESA*****/
 .container-empresa {
@@ -154,7 +154,7 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 20px; }
+  padding: 25px; }
   .empresa img {
     /*logo de la empresa*/
     border-radius: 6px;
@@ -165,9 +165,11 @@ footer {
   /*texto descriptivo de la empresa*/
   width: 70%; }
   .text-empresa h3 {
+    font-size: 25px;
     font-family: "Montserrat", sans-serif;
     padding-bottom: 20px; }
   .text-empresa p {
+    font-size: 16px;
     font-family: "Montserrat", sans-serif;
     line-height: 1.5; }
 
@@ -180,7 +182,7 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 20px; }
+  padding: 25px; }
   .director img {
     /*imagen director de la emrpesa*/
     border-radius: 6px;
@@ -191,9 +193,11 @@ footer {
   /*texto descriptivo del director*/
   width: 70%; }
   .text-director h3 {
+    font-size: 18px;
     font-family: "Montserrat", sans-serif;
     padding-bottom: 20px; }
   .text-director p {
+    font-size: 16px;
     font-family: "Montserrat", sans-serif;
     line-height: 1.5; }
 
@@ -224,10 +228,12 @@ footer {
   border-style: outset;
   background-color: whitesmoke; }
   .text-box h3 {
+    font-size: 18px;
     font-family: "Montserrat", sans-serif;
     padding-bottom: 10px;
     color: crimson; }
   .text-box p {
+    font-size: 16px;
     font-family: "Montserrat", sans-serif;
     line-height: 1.5; }
 
@@ -288,11 +294,12 @@ footer {
 
 .title-services {
   /*titulo servicios*/
-  font-family: "Montserrat", sans-serif;
   text-align: center;
-  font-size: 30px;
-  margin-top: 8px;
-  margin-bottom: 8px; }
+  margin-top: 15px;
+  margin-bottom: 10px; }
+  .title-services h3 {
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif; }
 
 .box-service {
   /*box de cada uno de los servicos*/
@@ -302,30 +309,34 @@ footer {
   background-color: #f3f1f1;
   box-shadow: 0.1px 2px 5px 5px rgba(6, 6, 6, 0.2);
   border-radius: 6px; }
-  .box-service div img {
+  .box-service img {
     width: 100%;
     height: 300px; }
-  .box-service div h3 {
+  .box-service h3 {
+    font-size: 18px;
     font-family: "Montserrat", sans-serif;
     text-align: center;
-    font-size: 25px;
-    margin-bottom: 5px; }
-  .box-service div p {
+    margin-bottom: 8px; }
+  .box-service p {
     font-family: "Montserrat", sans-serif;
     text-align: left;
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 1.5;
     margin-left: 5px;
     margin-bottom: 5px; }
 
 /***CLIENTES***/
 .main-title {
   text-align: center;
-  padding: 5px;
-  background-color: #f0f0f0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px; }
+  padding: 10px;
+  background-color: #f0f0f0; }
+  .main-title h3 {
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 10px; }
   .main-title p {
-    font-size: 20px; }
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif; }
 
 .container-logo {
   display: grid;
@@ -341,65 +352,127 @@ footer {
   /*contenedor general para la imagen de fondo*/
   display: flex;
   justify-content: center;
+  align-items: center;
   background-image: url(../assets/img/imagen-oficina.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh; }
+  height: 100vh;
+  width: 100%; }
 
 .container-contact {
   /*contenedor de formulario*/
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 500px;
-  margin-top: 8%;
+  align-items: center;
+  width: 700px;
+  height: 650px;
+  margin-top: 8px;
   border-radius: 10px;
-  background-color: #3b3838;
-  height: 55%; }
-
-.title-contact {
-  row-gap: 25px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 25px;
-  padding: 20px; }
+  background-color: #3b3838; }
+  .container-contact h3 {
+    font-size: 25px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+    padding-top: 15px; }
 
 .form-cont {
   /*contenedor que agrupa a los casilleros de datos*/
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  row-gap: 25px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 25px; }
+  height: 100%;
+  row-gap: 25px; }
 
-.box-contact {
-  /*cada uno de los casilleros para ingresar datos*/
-  display: flex;
-  margin: 8px 0px; }
-  .box-contact label {
-    flex-basis: 200px;
+.box-nombre {
+  margin: 8px 0px;
+  margin-right: 5px; }
+  .box-nombre label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: white;
     margin-right: 10px; }
-  .box-contact input {
+  .box-nombre input {
     /*ingreso de datos*/
-    display: flex;
-    flex: 1;
+    border-radius: 6px;
+    margin-left: 10px;
+    width: 400px;
+    height: 40px;
     padding: 5px; }
 
-.bottom input {
-  /*boton de enviar*/
-  padding: 15px 60px 15px 60px;
-  background-color: rgba(51, 82, 219, 0.801);
-  margin-bottom: 20px;
-  color: white;
-  font-size: 20px;
-  border: none;
-  cursor: pointer; }
-  .bottom input :hover {
-    background-color: #ef6d68; }
+.box-apellido {
+  margin: 8px 0px; }
+  .box-apellido label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: white;
+    margin-right: 10px; }
+  .box-apellido input {
+    /*ingreso de datos*/
+    border-radius: 6px;
+    margin-left: 8px;
+    height: 40px;
+    width: 400px;
+    padding: 5px; }
 
-.msj {
-  display: flex; }
+.box-telefono {
+  margin: 8px 0px; }
+  .box-telefono label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: white;
+    margin-right: 10px; }
+  .box-telefono input {
+    /*ingreso de datos*/
+    border-radius: 6px;
+    height: 40px;
+    width: 400px;
+    padding: 5px;
+    margin-left: 7px; }
+
+.box-email {
+  margin: 8px 0px; }
+  .box-email label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: white;
+    margin-right: 10px; }
+  .box-email input {
+    /*ingreso de datos*/
+    border-radius: 6px;
+    margin-left: 25px;
+    height: 40px;
+    width: 400px;
+    padding: 5px; }
+
+.box-mensaje {
+  margin: 8px 0px; }
+  .box-mensaje label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: white;
+    margin-right: 10px; }
+  .box-mensaje textarea {
+    /*ingreso de datos*/
+    border-radius: 6px;
+    height: 100px;
+    width: 400px;
+    padding: 5px; }
+
+.bottom {
+  /*boton de enviar*/ }
+  .bottom input {
+    padding: 15px 60px 15px 60px;
+    background-color: rgba(51, 82, 219, 0.801);
+    margin-bottom: 20px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer; }
+  .bottom :hover {
+    background-color: #ef6d68; }
 
 /****media queries header****/
 @media (max-width: 768px) {
@@ -460,6 +533,14 @@ footer {
       width: 35px;
       height: 35px; } }
 
+/*****media queries index***/
+@media (max-width: 768px) {
+  .main-index {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    min-height: 85%; } }
+
 /****media queries empresa****/
 @media (max-width: 768px) {
   .container-empresa {
@@ -512,13 +593,13 @@ footer {
     font-size: 20px; }
   .box-service {
     /*box de cada uno de los servicos*/ }
-    .box-service div img {
+    .box-service img {
       width: 100%;
       height: 250px; }
-    .box-service div h3 {
-      font-size: 20px; }
-    .box-service div p {
-      font-size: 15px; } }
+    .box-service h3 {
+      font-size: 18px; }
+    .box-service p {
+      font-size: 16px; } }
 
 /****media queries clientes****/
 @media (max-width: 768px) {
@@ -539,14 +620,16 @@ footer {
 
 /****media queries contacto****/
 @media (max-width: 768px) {
+  .main-container {
+    align-items: center; }
   .title-contact {
     font-size: 20px; }
   .container-contact {
-    width: 370px;
-    margin-top: 12%;
+    width: 550px;
+    height: 600px;
+    margin-top: 12px;
     border-radius: 10px;
-    background-color: #3b3838;
-    height: 55%; }
+    background-color: #3b3838; }
   .form-cont {
     font-size: 20px; } }
 
@@ -585,6 +668,32 @@ footer {
       padding: 5px;
       width: 30px;
       height: 30px; } }
+
+/*****media queries index*****/
+@media (max-width: 576px) {
+  .background-img {
+    background-image: url(../assets/img/dos-personas.png);
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+  .main-index h1 {
+    grid-column: 2 / 5;
+    grid-row: 7 / 9;
+    color: white;
+    font-size: 100px;
+    font-family: 'Arvo', serif;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 20px; }
+  .main-index h2 {
+    grid-column: 2 / 12;
+    grid-row: 9 / 12;
+    text-align: left;
+    color: white;
+    font-size: 50px;
+    margin-left: 15px;
+    font-family: "Montserrat", sans-serif; } }
 
 /*****media queries empresa*****/
 @media (max-width: 576px) {
@@ -682,13 +791,101 @@ footer {
 /*media queries contacto*/
 @media (max-width: 576px) {
   .container-contact {
-    width: 360px;
-    margin-top: 18%;
+    width: 320px;
+    height: 450px;
+    margin-top: 18px;
     border-radius: 10px;
-    background-color: #3b3838;
-    height: 55%; }
-  .title-contact {
-    font-size: 18px;
-    font-family: "Montserrat", sans-serif; }
+    background-color: #3b3838; }
+    .container-contact h3 {
+      font-size: 15px; }
   .form-cont {
-    font-size: 15px; } }
+    /*contenedor que agrupa a los casilleros de datos*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    row-gap: 15px; }
+  .box-nombre {
+    margin: 8px 0px;
+    margin-right: 5px; }
+    .box-nombre label {
+      font-family: "Montserrat", sans-serif;
+      font-size: 13px;
+      color: white;
+      margin-right: 10px; }
+    .box-nombre input {
+      /*ingreso de datos*/
+      border-radius: 6px;
+      margin-left: 10px;
+      width: 200px;
+      height: 30px;
+      padding: 5px; }
+  .box-apellido {
+    margin: 8px 0px; }
+    .box-apellido label {
+      font-family: "Montserrat", sans-serif;
+      font-size: 13px;
+      color: white;
+      margin-right: 10px; }
+    .box-apellido input {
+      /*ingreso de datos*/
+      border-radius: 6px;
+      margin-left: 8px;
+      height: 30px;
+      width: 200px;
+      padding: 5px; }
+  .box-telefono {
+    margin: 8px 0px; }
+    .box-telefono label {
+      font-family: "Montserrat", sans-serif;
+      font-size: 13px;
+      color: white;
+      margin-right: 10px; }
+    .box-telefono input {
+      /*ingreso de datos*/
+      border-radius: 6px;
+      height: 30px;
+      width: 200px;
+      padding: 5px;
+      margin-left: 7px; }
+  .box-email {
+    margin: 8px 0px; }
+    .box-email label {
+      font-family: "Montserrat", sans-serif;
+      font-size: 13px;
+      color: white;
+      margin-right: 7px; }
+    .box-email input {
+      /*ingreso de datos*/
+      border-radius: 6px;
+      margin-left: 25px;
+      height: 30px;
+      width: 200px;
+      padding: 5px; }
+  .box-mensaje {
+    margin: 8px 0px; }
+    .box-mensaje label {
+      font-family: "Montserrat", sans-serif;
+      font-size: 13px;
+      color: white;
+      margin-right: 15px; }
+    .box-mensaje textarea {
+      /*ingreso de datos*/
+      border-radius: 6px;
+      height: 80px;
+      width: 200px;
+      padding: 5px; }
+  .bottom {
+    /*boton de enviar*/ }
+    .bottom input {
+      padding: 5px 30px 5px 30px;
+      background-color: rgba(51, 82, 219, 0.801);
+      margin-bottom: 10px;
+      color: white;
+      font-size: 12px;
+      border: none;
+      cursor: pointer; }
+    .bottom :hover {
+      background-color: #ef6d68; } }

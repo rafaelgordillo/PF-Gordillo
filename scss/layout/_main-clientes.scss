@@ -1,14 +1,21 @@
 /***CLIENTES***/
 .main-title {
-   text-align: center;
-    padding: 5px;
+    text-align: center;
+    padding: 10px;
     background-color: rgb(240, 240, 240);
-    font-family: $font-paragraph;
-    font-size: 30px;
-    p{
-        font-size:20px ;
+
+    h3 {
+        font-size: 25px;
+        font-family: $font-paragraph;
+        padding-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+        font-family: $font-paragraph;
     }
 }
+
 .container-logo {
     display: grid;
     width: 100%;
@@ -18,5 +25,3 @@
     padding-top: 20px;
     padding-bottom: 10px;
 }
-
-
