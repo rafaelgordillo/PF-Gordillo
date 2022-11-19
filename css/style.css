@@ -547,18 +547,104 @@ footer {
 
 /*****media queries contacto*****/
 @media (max-width: 992px) {
+  .form-cont {
+    row-gap: 18px; }
   .main-container {
     align-items: center; }
   .title-contact {
-    font-size: 20px; }
+    font-size: 20px;
+    padding: 5px;
+    padding-top: 5px; }
   .container-contact {
-    width: 550px;
-    height: 600px;
+    width: 480px;
+    height: 520px;
     margin-top: 12px;
     border-radius: 10px;
     background-color: #3b3838; }
   .form-cont {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .box-nombre {
+    margin: 8px 0px;
+    margin-right: 5px; }
+    .box-nombre label {
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      color: white;
+      margin-right: 10px; }
+    .box-nombre input {
+      /*ingreso de datos*/
+      border-radius: 6px;
+      margin-left: 10px;
+      width: 350px;
+      height: 35px;
+      padding: 5px; }
+  .box-apellido {
+    margin: 8px 0px; }
+    .box-apellido label {
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      color: white;
+      margin-right: 10px; }
+    .box-apellido input {
+      /*ingreso de datos*/
+      border-radius: 6px;
+      margin-left: 8px;
+      height: 35px;
+      width: 350px;
+      padding: 5px; }
+  .box-telefono {
+    margin: 8px 0px; }
+    .box-telefono label {
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      color: white;
+      margin-right: 10px; }
+    .box-telefono input {
+      /*ingreso de datos*/
+      border-radius: 6px;
+      height: 35px;
+      width: 350px;
+      padding: 5px;
+      margin-left: 7px; }
+  .box-email {
+    margin: 8px 0px; }
+    .box-email label {
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      color: white;
+      margin-right: 10px; }
+    .box-email input {
+      /*ingreso de datos*/
+      border-radius: 6px;
+      margin-left: 25px;
+      height: 35px;
+      width: 350px;
+      padding: 5px; }
+  .box-mensaje {
+    margin: 8px 0px; }
+    .box-mensaje label {
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      color: white;
+      margin-right: 10px; }
+    .box-mensaje textarea {
+      /*ingreso de datos*/
+      border-radius: 6px;
+      height: 80px;
+      width: 350px;
+      padding: 5px; }
+  .bottom {
+    /*boton de enviar*/ }
+    .bottom input {
+      padding: 10px 50px 10px 50px;
+      background-color: rgba(51, 82, 219, 0.801);
+      margin-bottom: 15px;
+      color: white;
+      font-size: 15px;
+      border: none;
+      cursor: pointer; }
+    .bottom :hover {
+      background-color: #ef6d68; } }
 
 /****media queries header****/
 @media (max-width: 768px) {
@@ -706,18 +792,104 @@ footer {
 
 /****media queries contacto****/
 @media (max-width: 768px) {
+  .form-cont {
+    row-gap: 18px; }
   .main-container {
     align-items: center; }
   .title-contact {
-    font-size: 20px; }
+    font-size: 20px;
+    padding: 5px;
+    padding-top: 5px; }
   .container-contact {
-    width: 550px;
-    height: 600px;
+    width: 480px;
+    height: 520px;
     margin-top: 12px;
     border-radius: 10px;
     background-color: #3b3838; }
   .form-cont {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .box-nombre {
+    margin: 8px 0px;
+    margin-right: 5px; }
+    .box-nombre label {
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      color: white;
+      margin-right: 10px; }
+    .box-nombre input {
+      /*ingreso de datos*/
+      border-radius: 6px;
+      margin-left: 10px;
+      width: 350px;
+      height: 35px;
+      padding: 5px; }
+  .box-apellido {
+    margin: 8px 0px; }
+    .box-apellido label {
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      color: white;
+      margin-right: 10px; }
+    .box-apellido input {
+      /*ingreso de datos*/
+      border-radius: 6px;
+      margin-left: 8px;
+      height: 35px;
+      width: 350px;
+      padding: 5px; }
+  .box-telefono {
+    margin: 8px 0px; }
+    .box-telefono label {
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      color: white;
+      margin-right: 10px; }
+    .box-telefono input {
+      /*ingreso de datos*/
+      border-radius: 6px;
+      height: 35px;
+      width: 350px;
+      padding: 5px;
+      margin-left: 7px; }
+  .box-email {
+    margin: 8px 0px; }
+    .box-email label {
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      color: white;
+      margin-right: 10px; }
+    .box-email input {
+      /*ingreso de datos*/
+      border-radius: 6px;
+      margin-left: 25px;
+      height: 35px;
+      width: 350px;
+      padding: 5px; }
+  .box-mensaje {
+    margin: 8px 0px; }
+    .box-mensaje label {
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      color: white;
+      margin-right: 10px; }
+    .box-mensaje textarea {
+      /*ingreso de datos*/
+      border-radius: 6px;
+      height: 80px;
+      width: 350px;
+      padding: 5px; }
+  .bottom {
+    /*boton de enviar*/ }
+    .bottom input {
+      padding: 10px 50px 10px 50px;
+      background-color: rgba(51, 82, 219, 0.801);
+      margin-bottom: 15px;
+      color: white;
+      font-size: 15px;
+      border: none;
+      cursor: pointer; }
+    .bottom :hover {
+      background-color: #ef6d68; } }
 
 /*media queries header*/
 @media (max-width: 576px) {
