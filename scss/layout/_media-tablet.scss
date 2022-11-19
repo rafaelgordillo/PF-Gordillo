@@ -211,11 +211,14 @@
             align-items: center;
         }
 
-        .logo-client img {
+        .logo-client {
+        
+        img {
 
             width: 90%;
             height: 90%;
         }
+    }
     }
 
     /****media queries contacto****/
