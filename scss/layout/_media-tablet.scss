@@ -1,25 +1,5 @@
-/****media queries header****/
-@media (max-width:768px) {
 
-    .logo img {
-        height: 90px;
-        width: 90px;
-        border-radius: 10px;
-    }
 
-    .nav-bar {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        list-style: none;
-        width: 100%;
-        justify-content: flex-end;
-        font-size: 20px;
-        font-family: 'Montserrat', sans-serif;
-        gap: 20px;
-        padding-right: 40px;
-    }
-}
 
 /*****media queries footer*****/
 
@@ -38,7 +18,7 @@
     .name-address {
         /*nombre y direccion de la empresa*/
         font-family: $font-paragraph;
-        font-size: 12px;
+        font-size: 15px;
         color: white;
         width: 80%;
         padding-left: 20px;

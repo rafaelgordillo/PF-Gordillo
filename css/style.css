@@ -5,21 +5,17 @@
 
 /***HEADER***/
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  /*background-color: $background-header;*/
-  padding: 2px 5px 0px 2px; }
+  background-color: #3b3838; }
 
-.logo {
-  padding-left: 50px; }
-  .logo img {
-    border-radius: 5px;
-    width: 80px;
+nav {
+  background-color: #3b3838; }
+
+.navbar-brand {
+  /*el logo*/ }
+  .navbar-brand img {
     height: 80px;
-    margin: 2px;
-    /***animacion del logo****/
+    width: 80px;
+    border-radius: 6px;
     -webkit-animation: scale-in-center 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     animation: scale-in-center 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
@@ -43,29 +39,19 @@ header {
     transform: scale(1);
     opacity: 1; } }
 
-nav {
-  width: 100%; }
-
-.nav-bar {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  list-style: none;
-  width: 100%;
-  justify-content: flex-end;
+.nav-link {
+  /*nombres de las paginas*/
   font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
-  gap: 50px;
-  padding-right: 60px; }
-  .nav-bar li a {
-    text-decoration: none;
-    color: white; }
-  .nav-bar li a:hover {
-    color: #fc1111;
-    cursor: pointer; }
+  color: white;
+  font-family: 'Montserrat', sans-serif; }
 
-.fondo {
-  background-color: #3b3838; }
+.navbar-toggler {
+  color: #fc1111;
+  background-color: white; }
+
+.nav-link:hover {
+  color: #fc1111;
+  cursor: pointer; }
 
 /***FOOTER***/
 footer {
@@ -78,10 +64,14 @@ footer {
 
 .name-address {
   /*nombre y telefono de la empresa*/
-  font-family: "Montserrat", sans-serif;
   color: white;
   width: 60%;
   padding-left: 50px; }
+  .name-address h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px; }
+  .name-address p {
+    font-size: 15px; }
 
 .container-redes {
   /*contenedor de redes sociales*/
@@ -111,16 +101,14 @@ footer {
 .background-img {
   background-image: url(../assets/img/tres-personas.png);
   background-size: cover;
-  width: 100%;
-  /* height: 100vh;*/ }
+  width: 100%; }
 
 .main-index {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   width: 100%;
-  height: 100vh;
-  /* min-height: 75%;*/ }
+  height: 100vh; }
   .main-index h1 {
     grid-column: 2 / 5;
     grid-row: 6 / 12;
@@ -647,24 +635,6 @@ footer {
     .bottom :hover {
       background-color: #ef6d68; } }
 
-/****media queries header****/
-@media (max-width: 768px) {
-  .logo img {
-    height: 90px;
-    width: 90px;
-    border-radius: 10px; }
-  .nav-bar {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style: none;
-    width: 100%;
-    justify-content: flex-end;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    gap: 20px;
-    padding-right: 40px; } }
-
 /*****media queries footer*****/
 @media (max-width: 768px) {
   footer {
@@ -677,7 +647,7 @@ footer {
   .name-address {
     /*nombre y direccion de la empresa*/
     font-family: "Montserrat", sans-serif;
-    font-size: 12px;
+    font-size: 15px;
     color: white;
     width: 80%;
     padding-left: 20px; }
@@ -892,31 +862,12 @@ footer {
     .bottom :hover {
       background-color: #ef6d68; } }
 
-/*media queries header*/
-@media (max-width: 576px) {
-  .nav-bar {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style: none;
-    width: 100%;
-    justify-content: flex-end;
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-    gap: 10px;
-    padding-right: 30px; }
-  .logo img {
-    height: 80px;
-    width: 80px;
-    border-radius: 10px; }
-  .logo {
-    padding-left: 35px; } }
-
 /****media queries footer****/
 @media (max-width: 576px) {
   .name-address {
-    /*nombre y telefono de la empresa*/
-    font-size: 10px; }
+    /*nombre y telefono de la empresa*/ }
+    .name-address h3 {
+      font-size: 15px; }
   .container-redes {
     /*container de redes sociales*/ }
     .container-redes h5 {
@@ -933,9 +884,7 @@ footer {
   .background-img {
     background-image: url(../assets/img/dos-personas.png);
     background-size: cover;
-    /* position: absolute;*/
-    width: 100%;
-    /* height: 100%;*/ }
+    width: 100%; }
   .main-index h1 {
     grid-column: 2 / 5;
     grid-row: 7 / 9;
@@ -1020,8 +969,9 @@ footer {
     display: grid;
     grid-template-columns: repeat(1, 350px); }
   .title-services {
-    /*titulo de la pagina*/
-    font-size: 15px; }
+    /*titulo de la pagina*/ }
+    .title-services h3 {
+      font-size: 15px; }
   .box-service div img {
     /*imagen de cada box*/
     width: 100%;
@@ -1035,10 +985,10 @@ footer {
 
 /*****media queries clientes*****/
 @media (max-width: 576px) {
-  .main-title {
+  .main-title h3 {
+    font-size: 15px; }
+  .main-title p {
     font-size: 13px; }
-    .main-title p {
-      font-size: 13px; }
   .container-logo {
     display: grid;
     width: 100%;

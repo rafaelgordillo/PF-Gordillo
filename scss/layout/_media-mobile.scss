@@ -1,29 +1,4 @@
-/*media queries header*/
-@media (max-width: 576px) {
 
-    .nav-bar {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        list-style: none;
-        width: 100%;
-        justify-content: flex-end;
-        font-size: 15px;
-        font-family: 'Montserrat', sans-serif;
-        gap: 10px;
-        padding-right: 30px;
-    }
-
-    .logo img {
-        height: 80px;
-        width: 80px;
-        border-radius: 10px;
-    }
-
-    .logo {
-        padding-left: 35px;
-    }
-}
 
 /****media queries footer****/
 
@@ -31,9 +6,10 @@
 
     .name-address {
         /*nombre y telefono de la empresa*/
-        font-size: 10px;
+        h3{
+        font-size: 15px;
     }
-
+}
     .container-redes {
         /*container de redes sociales*/
 
@@ -60,12 +36,8 @@
     .background-img {
         background-image: url(../assets/img/dos-personas.png);
         background-size: cover;
-       /* position: absolute;*/
-
         width: 100%;
-       /* height: 100%;*/
     }
-
 
     .main-index {
 
@@ -112,14 +84,12 @@
             "box-3"
             "box-4"
         ;
-
     }
 
     .empresa {
         /*contenedor de la descripcion de la empresa*/
 
         flex-direction: column;
-
     }
 
     .text-empresa {
@@ -209,8 +179,11 @@
     }
 
     .title-services {
+
         /*titulo de la pagina*/
-        font-size: 15px;
+        h3 {
+            font-size: 15px;
+        }
     }
 
     .box-service {
@@ -236,7 +209,9 @@
 /*****media queries clientes*****/
 @media (max-width: 576px) {
     .main-title {
-        font-size: 13px;
+        h3 {
+            font-size: 15px;
+        }
 
         p {
             font-size: 13px;
