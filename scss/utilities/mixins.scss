@@ -1,9 +1,10 @@
  @mixin prop-flex {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    /*width: 100%;*/
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 25px;
+    /*padding: 25px;*/
+    margin: 25px;
  }

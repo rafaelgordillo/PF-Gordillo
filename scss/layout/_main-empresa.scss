@@ -21,8 +21,8 @@
     img {
         /*logo de la empresa*/
         border-radius: 6px;
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -31,7 +31,7 @@
     width: 70%;
 
     h3 {
-        font-size: 25px;
+        font-size: 30px;
         font-family: $font-paragraph;
         padding-bottom: 20px;
     }
@@ -52,8 +52,8 @@
     img {
         /*imagen director de la emrpesa*/
         border-radius: 6px;
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -88,18 +88,18 @@
     img {
         margin: 20px;
         border-radius: 6px;
-        width: 350px;
-        height: 300px;
+        width: 300px;
+        height: 250px;
         border-style: inset;
     }
 }
 
 .text-box {
     /*texto de los 4 boxes de fundamentos de la empresa*/
-    width: 70%;
-    height: 80%;
+    width: 600px;
+    height: 150px;
     padding: 20px;
-    padding-bottom: 60px;
+    /*padding-bottom: 60px;*/
     border-radius: 6px;
     border-style: outset;
     background-color: whitesmoke;
